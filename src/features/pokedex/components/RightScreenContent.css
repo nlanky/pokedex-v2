@@ -1,0 +1,21 @@
+.right-screen-content {
+	background-color: #D72113;
+}
+
+.right-screen-content-wrapper {
+	min-height: 26.71875rem;
+	padding: 1.40625rem;
+	margin: 0 0.9375rem 0.9375rem 0.9375rem;
+	background-color: #D72113;
+	border-bottom: 1px solid #2A2B26;
+	border-left: 1px solid #2A2B26;
+	border-right: 1px solid #2A2B26;	
+}
+
+@media only screen and (min-width: 500px) {
+	.right-screen-content-wrapper {
+		min-height: 35.625rem;
+		padding: 1.875rem;
+		margin: 0 1.25rem 1.25rem 1.25rem;
+	}
+}

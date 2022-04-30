@@ -1,0 +1,19 @@
+.vent-container {
+	display: flex;
+	flex-direction: column;	
+}
+
+.display-vent {
+	width: 3.75rem;
+	height: 0.140625rem;
+	background-color: #000;
+	margin-bottom: 0.140625rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.display-vent {
+		width: 5rem;
+		height: 0.1875rem;
+		margin-bottom: 0.1875rem;
+	}	
+}

@@ -1,0 +1,14 @@
+.slim-button {
+	width: 2.8125rem;
+	height: 0.46875rem;
+	background-color: #2A2B26;
+	border: 1px solid #2A2B26;
+	box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 500px) {
+	.slim-button {
+		width: 3.75rem;
+		height: 0.625rem;
+	}	
+}

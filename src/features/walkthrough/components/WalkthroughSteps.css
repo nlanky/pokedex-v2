@@ -1,0 +1,7 @@
+.custom-tooltip * {
+  font-family: 'Squada One', cursive !important;
+}
+
+.custom-tooltip .introjs-tooltip-header {
+  display: none;
+}

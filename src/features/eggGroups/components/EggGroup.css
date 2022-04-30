@@ -1,0 +1,12 @@
+.egg-group-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.egg-group-name {
+	margin-bottom: 0.4rem;
+}
+

@@ -1,0 +1,13 @@
+.main-display-wrapper {
+	position: relative;
+	padding: 1.40625rem 1.40625rem 0 1.40625rem;
+	background-color: #fff;
+	margin-bottom: 1.40625rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.main-display-wrapper {
+		padding: 1.875rem 1.875rem 0 1.875rem;
+		margin-bottom: 1.875rem;
+	}
+}

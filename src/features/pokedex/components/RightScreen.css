@@ -1,0 +1,17 @@
+.right-screen {
+	display: flex;
+	flex-direction: column;
+	width: 22.4375rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.right-screen {
+		width: 30.25rem;
+	}
+}
+
+@media only screen and (min-width: 1060px) {
+	.right-screen {
+		width: 50%;
+	}
+}

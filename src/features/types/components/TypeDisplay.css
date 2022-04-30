@@ -1,0 +1,13 @@
+.type-display {
+	padding: 0.703125rem 0.46875rem;
+	border: 1px solid #fff;
+	border-radius: 1.40625rem;
+	width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+	.type-display {
+		padding: 0.9375rem 0.625rem;
+		border-radius: 1.875rem;
+	}	
+}

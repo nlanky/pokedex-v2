@@ -1,0 +1,7 @@
+.encounter-location {
+  margin-bottom: 0.2rem;
+}
+
+.encounter-location:last-child {
+  margin-bottom: 0;
+}

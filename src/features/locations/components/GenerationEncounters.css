@@ -1,0 +1,16 @@
+.encounter-generation {
+	display: flex;
+	flex-direction: column;
+	
+	width: 100%;
+	margin-bottom: 0.4rem;
+}
+
+.encounter-generation:last-child {
+	margin-bottom: 0;
+}
+
+.encounter-header {
+  text-align: center;
+	font-weight: bold;
+}

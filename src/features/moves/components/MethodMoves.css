@@ -1,0 +1,11 @@
+.moves-method-container, .moves-method-header {
+	margin-bottom: 0.8rem;
+}
+
+.moves-method-container:last-child {
+	margin-bottom: 0;
+}
+
+.moves-method-header {
+	font-weight: bold;
+}

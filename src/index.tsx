@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// REACT
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// PUBLIC MODULES
+import { Provider } from 'react-redux';
+
+// LOCAL FILES
+// Assets
+import { BACKGROUND_IMAGE_FILE } from 'features/common/assets';
+// Components
+import { Pokedex } from 'Pokedex';
+// Redux
+import { store } from 'features/common/redux/store';
+// Styling
+import 'intro.js/introjs.css';
+
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error('No root element');
+}
+
+rootElement.style.backgroundImage = `url(${BACKGROUND_IMAGE_FILE})`;
+
+createRoot(rootElement).render(
+  <Provider store={store}>
+    <Pokedex />
+  </Provider>,
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

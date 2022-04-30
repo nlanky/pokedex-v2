@@ -1,0 +1,13 @@
+.left-screen-footer-middle-col {
+	width: 50%;
+	margin-right: 1.40625rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 500px) {
+	.left-screen-footer-middle-col {
+		margin-right: 1.875rem;
+	}
+}

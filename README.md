@@ -1,46 +1,46 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+	<a href="https://nlanky.github.io/pokedex-v2/" target="_blank">>>> LIVE DEMO <<<</a>
+</p>
+<h1>Pok&eacute;dex v2</h1>
+<p>This is an attempt to recreate Ash's Pok&eacute;dex from Season 1 of the Pok&eacute;mon anime series. As the Pok&eacute;dex (pictured below) from the anime didn't provide detailed instructions, most of the functionality is just based off of things I would like to see.</p>
+<p>This is version 2 which uses React, Redux Toolkit (including Redux Toolkit Query), and TypeScript.</p>
+<img src="/src/features/common/assets/images/ash-pokedex-anime.png" style="width: 100%;" />
+<p>All Pok&eacute;mon up to and including Generation 8 are included. There are some limitations based on the availability and format of data from Pok&eacute;API. As of writing, the maximum Pok&eacute;dex number is 898 (Calyrex).</p>
+<h2>Instructions</h2>
+<img src="/src/features/common/assets/images/annotated-pokedex.jpg" style="width: 100%;" />
+<ol>
+	<li>Toggle the walkthrough at any time using this button</li>
+	<li>Go to the previous Pok&eacute;mon (if applicable)</li>
+	<li>Go to the next Pok&eacute;mon (if applicable)</li>
+	<li>Go to the previous sprite (if applicable)</li>
+	<li>Go to the next sprite (if applicable)</li>
+	<li>Play the Pok&eacute;mon's cry</li>
+	<li>Go to the first sprite</li>
+	<li>Go to the last sprite</li>
+	<li>Search for a Pok&eacute;mon using their name or Pok&eacute;dex number</li>
+	<li>Use the D-pad as an alternative to the arrows on the left display</li>
+	<li>Show flavour text (description)</li>
+	<li>Show statistics</li>
+	<li>Show height and weight</li>
+	<li>Show type effectiveness when being attacked</li>
+	<li>Show abilities</li>
+	<li>Show wild encounter locations</li>
+	<li>Show evolution chain</li>
+	<li>Show moves</li>
+	<li>Show varieties (including mega evolutions)</li>
+	<li>Show egg groups</li>
+	<li>Scroll the right display up</li>
+	<li>Scroll the right display down</li>
+	<li>Scroll to the top of the right display</li>
+	<li>Scroll to the bottom of the right display</li>
+	<li>Go to a random Pok&eacute;mon</li>
+</ol>
+<h2>Potential Improvements</h2>
+<ul>
+	<li>Add ability to change language. Some of this work has been done but translations sometimes not available from API.</li>
+</ul>
+<h2>Changelog</h2>
+<p>
+	<b>v1.0.0</b><br />
+	Initial commit of Pokedex v2 app
+</p>

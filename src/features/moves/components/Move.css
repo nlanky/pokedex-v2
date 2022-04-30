@@ -1,0 +1,15 @@
+.moves-row {
+	display: flex;
+	flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.moves-row:last-child {
+	margin-bottom: 0;
+}
+
+.moves-name-level {
+	width: calc(50% - 1rem);
+	margin-right: 1rem;
+	border-right: 1px solid #fff;
+}

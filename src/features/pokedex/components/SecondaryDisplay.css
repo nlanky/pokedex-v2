@@ -1,0 +1,28 @@
+.secondary-display-wrapper {
+	color: #fff;
+	background-color: #2A2B26;
+	padding: 0.703125rem;
+	margin-bottom: 1.40625rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 7.03125rem;
+	flex-wrap: wrap;
+	font-size: 0.84375rem;
+	line-height: 1.2rem;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+.secondary-display-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+@media only screen and (min-width: 500px) {
+	.secondary-display-wrapper {
+		padding: 0.9375rem;
+		margin-bottom: 1.875rem;
+		height: 9.375rem;
+		font-size: 1.125rem;
+	}
+}

@@ -1,0 +1,12 @@
+.main-display-footer {
+	height: 2.109375rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 500px) {
+	.main-display-footer {
+		height: 2.8125rem;
+	}
+}

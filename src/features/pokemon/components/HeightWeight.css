@@ -1,0 +1,13 @@
+.height-weight-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.height-weight-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}

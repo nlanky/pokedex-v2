@@ -1,0 +1,78 @@
+.flex-center {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.sprite-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #2A2B26;
+	min-height: 13.125rem;
+}
+
+.sprite-middle {
+	flex: 1;
+	display: flex;
+}
+
+.sprite-cycle {
+	min-width: 3.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sprite-cycle.top, .sprite-cycle.bottom {
+  min-height: 2.34375rem;
+}
+
+.sprite-cycle.left, .sprite-cycle.right {
+  flex-direction: column;
+}
+
+.sprite-wrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes opacityAnimation {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.sprite-wrapper img {
+	width: 7.5rem;
+	height: 7.5rem;
+	animation: opacityAnimation none 2s;
+}
+
+.nav-number-text {
+	color: #fff;
+	margin-top: 0.625rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.sprite-container {
+		min-height: 17.5rem;
+	}
+
+	.sprite-cycle {
+		min-width: 3.75rem;
+	}	
+
+  .sprite-cycle.top, .sprite-cycle.bottom {
+    min-height: 3.125rem;
+  }
+
+	.sprite-wrapper img {
+		width: 10rem;
+		height: 10rem;
+	}
+}

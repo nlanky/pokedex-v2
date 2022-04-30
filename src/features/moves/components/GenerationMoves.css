@@ -1,0 +1,16 @@
+.moves-generation {
+	width: 100%
+}
+
+.moves-generation, .moves-header {
+	margin-bottom: 0.8rem;
+}
+
+.moves-generation:last-child {
+	margin-bottom: 0;
+}
+
+.moves-header {
+	width: 100%;
+	text-align: center;
+}

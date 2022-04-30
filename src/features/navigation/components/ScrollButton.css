@@ -1,0 +1,23 @@
+.white-grid-button {
+	background-color: #fff;
+	width: 3.9375rem;
+	height: 2.8125rem;
+	border-top: 3px solid #2A2B26;
+	border-left: 3px solid #2A2B26;
+}
+
+.white-grid-button:nth-child(2n) {
+  border-right: 3px solid #2A2B26;
+  border-bottom: 3px solid #2A2B26;
+}
+
+.white-grid-button:nth-child(n+1) {
+  border-bottom: 3px solid #2A2B26;
+}
+
+@media only screen and (min-width: 500px) {
+	.white-grid-button {
+		width: 5.25rem;
+		height: 3.75rem;
+	}
+}

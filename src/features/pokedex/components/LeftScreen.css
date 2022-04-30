@@ -1,0 +1,16 @@
+.left-screen {
+	background-color: #D72113;
+	width: 22.4375rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.left-screen {
+		width: 30.25rem;
+	}
+}
+
+@media only screen and (min-width: 1060px) {
+	.left-screen {
+		width: 50%;
+	}
+}

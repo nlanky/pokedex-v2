@@ -1,0 +1,11 @@
+.encounter-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.no-encounters {
+	display: flex;
+	justify-content: center;
+}

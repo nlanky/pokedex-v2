@@ -1,0 +1,59 @@
+.type-effect-display {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.type-effect-container {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 0.625rem;
+}
+
+.type-effect-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.type-effect {
+	width: calc((100% - 4px) / 2);
+	display: flex;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.6rem;
+	border: 1px solid #fff;
+	margin: 2px 2px 0 0;
+	border-radius: 1.40625rem;
+}
+
+.type-effect-heading {
+	margin-bottom: 0.4rem;
+}
+
+.type-name {
+	text-transform: capitalize;
+	margin-right: 0.25rem;
+}
+
+.type-effect-ability-container {
+	width: 100%;
+	margin-top: 0.6rem;
+	padding-top: 0.6rem;
+	border-top: 1px solid #fff;
+}
+
+.type-effect-ability-wrapper {
+	margin-bottom: 0.4rem;	
+	font-size: 0.6rem;
+	line-height: 0.8rem;
+}
+
+@media only screen and (min-width: 500px) {
+	.type-effect {
+		font-size: 0.8rem;
+	}
+
+	.type-effect-disclaimer {
+		font-size: 0.84375rem;
+		line-height: 1rem;
+	}
+}
