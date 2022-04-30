@@ -20,14 +20,14 @@
 	<li>Search for a Pok&eacute;mon using their name or Pok&eacute;dex number</li>
 	<li>Use the D-pad as an alternative to the arrows on the left display</li>
 	<li>Show flavour text (description)</li>
-	<li>Show statistics</li>
+	<li>Show stats</li>
 	<li>Show height and weight</li>
 	<li>Show type effectiveness when being attacked</li>
 	<li>Show abilities</li>
-	<li>Show wild encounter locations</li>
+	<li>Show encounter locations</li>
 	<li>Show evolution chain</li>
 	<li>Show moves</li>
-	<li>Show varieties (including mega evolutions)</li>
+	<li>Show varieties and forms</li>
 	<li>Show egg groups</li>
 	<li>Scroll the right display up</li>
 	<li>Scroll the right display down</li>
@@ -41,6 +41,13 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.1</b><br />
+	<ul>
+		<li>Update README to match new walkthrough descriptions.</li>
+		<li>Added GitHub Pages.</li>
+	</ul>	
+</p>
+<p>
 	<b>v1.0.0</b><br />
-	Initial commit of Pokedex v2 app
+	Initial commit of Pok&eacute;dex v2 app.
 </p>
