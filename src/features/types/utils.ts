@@ -68,48 +68,40 @@ export const getTypeEffectivenessForPokemon = (
     const typeTwoDamageRelations =
       typeToData[typeTwo].data.damage_relations;
 
-    // Double existing damage, otherwise set to 2x
     typeTwoDamageRelations.double_damage_from.forEach((val) => {
       const type = val.name;
-      if (!typeToMultiplier[type]) {
-        typeToMultiplier[type] = 2;
-        return;
-      }
-
       const typeDamage = typeToMultiplier[type];
-      if (typeDamage === 2) {
-        typeToMultiplier[type] = 4;
-        return;
+      switch (typeDamage) {
+        case 0:
+          break;
+        case 0.5:
+          typeToMultiplier[type] = 1;
+          break;
+        case 2:
+          typeToMultiplier[type] = 4;
+          break;
+        default:
+          typeToMultiplier[type] = 2;
+          break;
       }
-
-      if (typeDamage === 1) {
-        typeToMultiplier[type] = 2;
-        return;
-      }
-
-      if (typeDamage !== 0) typeToMultiplier[type] = 1;
     });
 
-    // Half existing damage, otherwise set to 0.5x
     typeTwoDamageRelations.half_damage_from.forEach((val) => {
       const type = val.name;
-      if (!typeToMultiplier[type]) {
-        typeToMultiplier[type] = 0.5;
-        return;
-      }
-
       const typeDamage = typeToMultiplier[type];
-      if (typeDamage === 2) {
-        typeToMultiplier[type] = 1;
-        return;
+      switch (typeDamage) {
+        case 0:
+          break;
+        case 0.5:
+          typeToMultiplier[type] = 0.25;
+          break;
+        case 2:
+          typeToMultiplier[type] = 1;
+          break;
+        default:
+          typeToMultiplier[type] = 0.5;
+          break;
       }
-
-      if (typeDamage === 1) {
-        typeToMultiplier[type] = 0.5;
-        return;
-      }
-
-      if (typeDamage !== 0) typeToMultiplier[type] = 0.25;
     });
 
     // If type is immune, always overwrite to 0x

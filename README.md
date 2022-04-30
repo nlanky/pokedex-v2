@@ -41,6 +41,10 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.3</b><br />
+	Fixed issue where immunity from first type of dual-typed Pok&eacute;mon was being overwritten by second type.
+</p>
+<p>
 	<b>v1.0.2</b><br />
 	Fix cries not playing due to different file path on deployed app.
 </p>
