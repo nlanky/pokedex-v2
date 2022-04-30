@@ -41,6 +41,10 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.2</b><br />
+	Fix cries not playing due to different file path on deployed app.
+</p>
+<p>
 	<b>v1.0.1</b><br />
 	<ul>
 		<li>Update README to match new walkthrough descriptions.</li>

@@ -19,8 +19,9 @@ export const SpriteCryButton: VoidFunctionComponent = () => {
   const onClick = () => {
     try {
       const cryFile = CRY_AUDIO_FILES.find((filePath) => {
+        // file path example: /pokedex-v2/static/media/1.0c96f8f2af2bc9f847f2.wav
         const filePathSplit = filePath.split('/');
-        const fileName = filePathSplit[3];
+        const fileName = filePathSplit[4];
         const fileNameSplit = fileName.split('.');
         return currentPokemonId === Number(fileNameSplit[0]);
       });
