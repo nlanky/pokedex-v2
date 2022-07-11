@@ -33,7 +33,7 @@ export const WALKTHROUGH_STEPS: Step[] = [
     position: 'bottom',
   },
   {
-    element: '.sprite-button',
+    element: '.sprite-cry-button',
     intro: "Play the Pok&eacute;mon's cry",
     position: 'bottom',
   },

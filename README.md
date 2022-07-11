@@ -41,6 +41,10 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.5</b><br />
+	Fixed bug in walkthrough where sprite cry button was not referenced correctly.
+</p>
+<p>
 	<b>v1.0.4</b><br />
 	Fixed issue where user could click on previous or next sprite/Pok&eacute;mon button even if there was no sprite/Pok&eacute;mon to show.
 </p>
