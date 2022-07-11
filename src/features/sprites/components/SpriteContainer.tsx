@@ -124,7 +124,7 @@ export const SpriteContainer: VoidFunctionComponent = () => {
               ))}
             </div>
 
-            <div className="sprite-button-wrapper bottom">
+            <div className="sprite-button-wrapper right">
               {shouldShowNextPokemonButton && (
                 <div
                   aria-label="Next Pokemon"
@@ -142,7 +142,7 @@ export const SpriteContainer: VoidFunctionComponent = () => {
               )}
             </div>
           </div>
-          <div className="sprite-button-wrapper right">
+          <div className="sprite-button-wrapper bottom">
             <div
               aria-label="Next sprite"
               onClick={onNextSpriteClick}

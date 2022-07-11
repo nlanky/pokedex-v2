@@ -41,6 +41,10 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.6</b><br />
+	Fixed bug in walkthrough where next Pok&eacute;mon and next sprite buttons were not referenced correctly.
+</p>
+<p>
 	<b>v1.0.5</b><br />
 	Fixed bug in walkthrough where sprite cry button was not referenced correctly.
 </p>
