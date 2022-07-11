@@ -39,7 +39,7 @@ export const SpriteCryButton: VoidFunctionComponent = () => {
   return (
     <div
       aria-label="Play Pokémon cry"
-      className="sprite-button"
+      className="sprite-cry-button"
       onClick={onClick}
       onKeyDown={() => {}}
       role="button"

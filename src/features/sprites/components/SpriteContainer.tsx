@@ -44,6 +44,16 @@ export const SpriteContainer: VoidFunctionComponent = () => {
     (state) => state.navigation.spriteIndex,
   );
 
+  // DERIVED VARIABLES
+  const shouldShowPreviousSpriteButton = currentSpriteIndex - 1 >= 0;
+  const shouldShowNextSpriteButton =
+    currentSpriteIndex + 1 < spriteArray.length;
+  const shouldShowPreviousPokemonButton = currentPokemonId - 1 >= 1;
+  const shouldShowNextPokemonButton =
+    currentPokemonId + 1 <= MAX_POKEDEX_NUMBER;
+  const leftNumberToDisplay = currentPokemonId - 1;
+  const rightNumberToDisplay = currentPokemonId + 1;
+
   // HANDLERS
   const onKeyDown = () => {};
   const onPreviousSpriteClick = () => {
@@ -59,16 +69,6 @@ export const SpriteContainer: VoidFunctionComponent = () => {
     dispatch(incrementId());
   };
 
-  // DERIVED VARIABLES
-  const shouldShowPreviousSpriteButton = currentSpriteIndex - 1 >= 0;
-  const shouldShowNextSpriteButton =
-    currentSpriteIndex + 1 < spriteArray.length;
-  const shouldShowPreviousPokemonButton = currentPokemonId - 1 >= 1;
-  const shouldShowNextPokemonButton =
-    currentPokemonId + 1 <= MAX_POKEDEX_NUMBER;
-  const leftNumberToDisplay = currentPokemonId - 1;
-  const rightNumberToDisplay = currentPokemonId + 1;
-
   return (
     <div className="sprite-container">
       {loading ? (
@@ -77,38 +77,39 @@ export const SpriteContainer: VoidFunctionComponent = () => {
         </div>
       ) : (
         <>
-          <div className="sprite-top">
-            <div
-              aria-label="Previous sprite"
-              className="sprite-cycle top"
-              onClick={onPreviousSpriteClick}
-              onKeyDown={onKeyDown}
-              role="button"
-              tabIndex={0}
-            >
-              {shouldShowPreviousSpriteButton && (
+          {/* top/left/bottom/right classes used for walkthrough */}
+          <div className="sprite-button-wrapper top">
+            {shouldShowPreviousSpriteButton && (
+              <div
+                aria-label="Previous sprite"
+                onClick={onPreviousSpriteClick}
+                onKeyDown={onKeyDown}
+                role="button"
+                tabIndex={0}
+              >
                 <FaChevronUp color="#fff" />
-              )}
-            </div>
+              </div>
+            )}
           </div>
-          <div className="sprite-middle">
-            <div
-              aria-label="Previous Pokemon"
-              className="sprite-cycle left"
-              onClick={onPreviousPokemonClick}
-              onKeyDown={onKeyDown}
-              role="button"
-              tabIndex={0}
-            >
+          <div className="sprite-container-middle">
+            <div className="sprite-button-wrapper left">
               {shouldShowPreviousPokemonButton && (
-                <>
+                <div
+                  aria-label="Previous Pokemon"
+                  className="sprite-button"
+                  onClick={onPreviousPokemonClick}
+                  onKeyDown={onKeyDown}
+                  role="button"
+                  tabIndex={0}
+                >
                   <FaChevronLeft color="#fff" />
                   <span className="nav-number-text">
                     #{leftNumberToDisplay}
                   </span>
-                </>
+                </div>
               )}
             </div>
+
             <div className="sprite-wrapper">
               {spriteArray.map((spriteUrl, index) => (
                 <Sprite
@@ -122,28 +123,28 @@ export const SpriteContainer: VoidFunctionComponent = () => {
                 />
               ))}
             </div>
-            <div
-              aria-label="Next Pokemon"
-              className="sprite-cycle right"
-              onClick={onNextPokemonClick}
-              onKeyDown={onKeyDown}
-              role="button"
-              tabIndex={0}
-            >
+
+            <div className="sprite-button-wrapper bottom">
               {shouldShowNextPokemonButton && (
-                <>
+                <div
+                  aria-label="Next Pokemon"
+                  className="sprite-button"
+                  onClick={onNextPokemonClick}
+                  onKeyDown={onKeyDown}
+                  role="button"
+                  tabIndex={0}
+                >
                   <FaChevronRight color="#fff" />
                   <span className="nav-number-text">
                     #{rightNumberToDisplay}
                   </span>
-                </>
+                </div>
               )}
             </div>
           </div>
-          <div className="sprite-bottom">
+          <div className="sprite-button-wrapper right">
             <div
               aria-label="Next sprite"
-              className="sprite-cycle bottom"
               onClick={onNextSpriteClick}
               onKeyDown={onKeyDown}
               role="button"

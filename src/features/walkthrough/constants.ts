@@ -13,22 +13,22 @@ export const WALKTHROUGH_STEPS: Step[] = [
     position: 'bottom',
   },
   {
-    element: '.sprite-cycle.left',
+    element: '.sprite-button-wrapper.left',
     intro: 'Go to the previous Pok&eacute;mon (if applicable)',
     position: 'bottom',
   },
   {
-    element: '.sprite-cycle.right',
+    element: '.sprite-button-wrapper.right',
     intro: 'Go to the next Pok&eacute;mon (if applicable)',
     position: 'bottom',
   },
   {
-    element: '.sprite-cycle.top',
+    element: '.sprite-button-wrapper.top',
     intro: 'Go to the previous sprite (if applicable)',
     position: 'bottom',
   },
   {
-    element: '.sprite-cycle.bottom',
+    element: '.sprite-button-wrapper.bottom',
     intro: 'Go to the next sprite (if applicable)',
     position: 'bottom',
   },

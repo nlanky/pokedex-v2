@@ -12,24 +12,23 @@
 	min-height: 13.125rem;
 }
 
-.sprite-middle {
-	flex: 1;
-	display: flex;
-}
-
-.sprite-cycle {
+.sprite-button-wrapper {
+	min-height: 2.34375rem;
 	min-width: 3.75rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.sprite-cycle.top, .sprite-cycle.bottom {
-  min-height: 2.34375rem;
+.sprite-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.sprite-cycle.left, .sprite-cycle.right {
-  flex-direction: column;
+.sprite-container-middle {
+	flex: 1;
+	display: flex;
 }
 
 .sprite-wrapper {
@@ -63,13 +62,10 @@
 		min-height: 17.5rem;
 	}
 
-	.sprite-cycle {
+	.sprite-button-wrapper {
+		min-height: 3.125rem;
 		min-width: 3.75rem;
 	}	
-
-  .sprite-cycle.top, .sprite-cycle.bottom {
-    min-height: 3.125rem;
-  }
 
 	.sprite-wrapper img {
 		width: 10rem;
