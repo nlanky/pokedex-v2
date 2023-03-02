@@ -41,6 +41,10 @@
 </ul>
 <h2>Changelog</h2>
 <p>
+	<b>v1.0.7</b><br />
+	Added support for generation 9 and improved error handling when new games are added to API.
+</p>
+<p>
 	<b>v1.0.6</b><br />
 	Fixed bug in walkthrough where next Pok&eacute;mon and next sprite buttons were not referenced correctly.
 </p>
