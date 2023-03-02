@@ -33,6 +33,10 @@ export const transformEncountersResponse = (
         all the generations.
       */
       const generation = VERSION_TO_GENERATION[version.version.name];
+      if (typeof generation === 'undefined') {
+        return;
+      }
+
       if (typeof processedEncounters[generation] === 'undefined') {
         processedEncounters[generation] = {};
       }

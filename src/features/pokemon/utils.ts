@@ -56,6 +56,10 @@ export const transformPokemonResponse = (
           VERSION_GROUP_TO_GENERATION[
             versionGroup.version_group.name
           ];
+        if (typeof generation === 'undefined') {
+          return;
+        }
+
         if (typeof nextMoves[generation] === 'undefined') {
           nextMoves[generation] = {};
         }

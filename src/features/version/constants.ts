@@ -1,4 +1,11 @@
 export const VERSION_ARRAY = [
+  'violet',
+  'scarlet',
+  'legends-arceus',
+  'shining-pearl',
+  'brilliant-diamond',
+  'the-crown-tundra',
+  'the-isle-of-armor',
   'shield',
   'sword',
   'lets-go-eevee',
@@ -36,6 +43,11 @@ export const VERSION_ARRAY = [
 ];
 
 export const VERSION_GROUP_ARRAY = [
+  'scarlet-violet',
+  'legends-arceus',
+  'brilliant-diamond-and-shining-pearl',
+  'the-crown-tundra',
+  'the-isle-of-armor',
   'sword-shield',
   'lets-go-pikachu-lets-go-eevee',
   'ultra-sun-ultra-moon',
@@ -93,6 +105,13 @@ export const VERSION_TO_GENERATION: Record<string, number> = {
   'lets-go-eevee': 7,
   sword: 8,
   shield: 8,
+  'the-isle-of-armor': 8,
+  'the-crown-tundra': 8,
+  'brilliant-diamond': 8,
+  'shining-pearl': 8,
+  'legends-arceus': 8,
+  scarlet: 9,
+  violet: 9,
 };
 
 export const VERSION_GROUP_TO_GENERATION: Record<string, number> = {
@@ -116,4 +135,9 @@ export const VERSION_GROUP_TO_GENERATION: Record<string, number> = {
   'ultra-sun-ultra-moon': 7,
   'lets-go-pikachu-lets-go-eevee': 7,
   'sword-shield': 8,
+  'the-isle-of-armor': 8,
+  'the-crown-tundra': 8,
+  'brilliant-diamond-and-shining-pearl': 8,
+  'legends-arceus': 8,
+  'scarlet-violet': 9,
 };
